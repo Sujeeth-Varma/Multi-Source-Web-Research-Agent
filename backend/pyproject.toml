@@ -4,10 +4,27 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Sujeeth-Varma", email = "sujeethvarma27@gmail.com" }
+    { name = "Sujeeth-Varma", email = "author@example.com" }
 ]
+
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "duckduckgo-search>=8.1.1",
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "langchain>=1.4.0",
+    "langchain-core>=1.6.3",
+    "langchain-google-genai>=4.4.0",
+    "langfuse>=4.15.2",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "pytest-mock>=3.15.1",
+    "trafilatura>=2.2.0",
+    "uvicorn[standard]>=0.52.4",
+]
 
 [project.scripts]
 backend = "backend:main"
