@@ -1,7 +1,10 @@
 import logging
 import asyncio
 from typing import List
-from duckduckgo_search import DDGS
+try:
+    from ddgs import DDGS
+except ImportError:
+    from duckduckgo_search import DDGS
 
 
 from backend.providers.base import BaseSearchProvider

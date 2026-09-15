@@ -44,6 +44,7 @@ class ResearchPlanner:
 
             structured_llm = llm.with_structured_output(QueryPlanOutput)
             prompt = ChatPromptTemplate.from_template(PLANNER_PROMPT)
+            chain = prompt | structured_llm
             from backend.observability.langfuse import observer
             callbacks = observer.get_callbacks()
             config = {"callbacks": callbacks} if callbacks else None
