@@ -68,8 +68,7 @@ class ResearchSynthesizer:
         try:
             llm = ChatGoogleGenerativeAI(
                 model=settings.GEMINI_MODEL,
-                google_api_key=self.api_key,
-                temperature=0.2
+                google_api_key=self.api_key
             )
 
             structured_llm = llm.with_structured_output(SynthesisOutput)

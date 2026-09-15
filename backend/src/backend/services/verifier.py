@@ -60,8 +60,7 @@ class ClaimVerifier:
         try:
             llm = ChatGoogleGenerativeAI(
                 model=settings.GEMINI_MODEL,
-                google_api_key=self.api_key,
-                temperature=0.1
+                google_api_key=self.api_key
             )
 
             structured_llm = llm.with_structured_output(VerificationOutput)
