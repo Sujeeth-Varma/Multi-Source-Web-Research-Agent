@@ -4,6 +4,13 @@ A full-stack, enterprise-grade web research platform designed to automate natura
 
 ---
 
+## Demo Video
+
+
+https://github.com/user-attachments/assets/cdc114a5-091d-4dc0-8a1e-39f1a9692d12
+
+
+
 ## Architecture Overview
 
 The system consists of a Python FastAPI backend implementing an asynchronous research orchestration pipeline and a modern React + TypeScript frontend built with Vite and Tailwind CSS.
